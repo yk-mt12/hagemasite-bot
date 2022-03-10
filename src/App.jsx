@@ -15,6 +15,6 @@ function App() {
 export default App;
 
 const Div = styled.div`
-margin: 0 auto;
+margin: 0;
 text-align: center;
 `

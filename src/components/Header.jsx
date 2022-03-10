@@ -12,5 +12,5 @@ const HeaderBox = styled.header`
   width: 100%;
   height: 60px;
   background-color: #fff3f3;
-  margin: 0;
+  margin: 0px;
 `
