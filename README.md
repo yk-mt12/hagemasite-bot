@@ -1,5 +1,5 @@
 # 励ましbotです。
-メンタルが落ち込んだ時に、使ってください。ブラウザを閉じない限り、永遠に褒めてくれます。
+メンタルが落ち込んだ時に、使ってください。ブラウザを閉じない限り、永遠に褒めてくれます()。
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
