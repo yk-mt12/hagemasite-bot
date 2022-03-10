@@ -1,33 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-const message = [
-  "天才",
-  "かっこいい",
-  "可愛い",
-  "今日もえらい",
-  "まじ可愛い",
-  "キュートすぎ",
-  "今日もお疲れ様",
-  "生きててえらい",
-  "生きてるだけで最強",
-  "君なら大丈夫",
-  "元気出して",
-  "だひょーん",
-  "にゃんにゃーん",
-  "神？！",
-  "ゴッド？!",
-  "天使？！",
-  "未来は明るい",
-  "やーーーー！(きんにくん)",
-  "やーーー！(やーーーー)",
-  "wwwwwww",
-  "がんばれがんばれ",
-  "21歳！拳で",
-  "元気出してこ",
-];
+import { ShowMessage } from "./ShowMessage";
+import { ShowPositive } from "./ShowPositive";
 
-export const Count = () => {
+export const Main = () => {
   const [count, setCount] = useState(0);
   const [buttonMessage, setButtonMessage] = useState("大丈夫？元気ない？");
   const [changed, setChanged] = useState(false);
@@ -67,10 +44,10 @@ export const Count = () => {
   };
 
   return (
-    <Div>
-      <CountPositive>今日の励まし回数: {count}</CountPositive>
+    <SDiv>
+      <ShowPositive count={count} />
 
-      <Button
+      <SButton
         onClick={() => {
           countUp();
           changeFlag();
@@ -79,41 +56,31 @@ export const Count = () => {
           randomMargin();
           changeButtonMessage(count);
         }}
-        changed={changed}
       >
         {buttonMessage}
-      </Button>
-      <Message colorcode={colorcode} fontSize={fontSize} margin={margin}>
-        {message[Math.floor(Math.random() * message.length)]}
-      </Message>
-    </Div>
+      </SButton>
+      <ShowMessage
+        colorcode={colorcode}
+        fontSize={fontSize}
+        margin={margin}
+        changed={changed}
+      />
+    </SDiv>
   );
 };
 
-const Message = styled.p`
-  font-size: ${(props) =>
-    props.changed ? props.fontSize + "px" : props.fontSize + "px"};
-  color: ${(props) => (props.changed ? props.colorcode : props.colorcode)};
-  margin: ${(props) =>
-    props.changed ? props.margin + "px" : props.margin + "px"};
-`;
-
-const Div = styled.div`
-  background-color: #f3f3f3;
+const SDiv = styled.div`
   min-height: 500px;
+  max-height 1000px;
 `;
 
-const Button = styled.button`
+const SButton = styled.button`
   padding: 12px;
   border-radius: 4px;
-  :hover{
+  :hover {
     opacity: 50%;
   }
   font-size: 15px;
+  background-color: #FFD28B;
+  width: auto;
 `;
-
-const CountPositive = styled.p`
-  color: #333;
-  font-wight: bold;
-  font-size: 25px;
-`

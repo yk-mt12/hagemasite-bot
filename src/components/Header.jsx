@@ -2,15 +2,14 @@ import styled from "styled-components";
 
 export const Header = () => {
   return (
-    <HeaderBox>
+    <SHeaderBox>
       <h1>疲れた心に励ましbot</h1>
-    </HeaderBox>
+    </SHeaderBox>
   )
 }
 
-const HeaderBox = styled.header`
+const SHeaderBox = styled.header`
   width: 100%;
   height: 60px;
-  background-color: #fff3f3;
   margin: 0px;
 `

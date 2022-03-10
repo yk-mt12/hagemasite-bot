@@ -1,20 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Count } from "./components/Count";
+import {  Main } from "./components/Main";
 import { Header } from "./components/Header";
 
 function App() {
   return (
-    <Div>
+    <SDiv>
       <Header />
-      <Count />
-    </Div>
+      <Main />
+    </SDiv>
   );
 }
 export default App;
 
-const Div = styled.div`
-margin: 0;
+const SDiv = styled.div`
 text-align: center;
+background-color: #fff;
+height: 100%;
 `
