@@ -1,4 +1,5 @@
-# 励ましbotです。
+# 疲れた心に励ましbotです。
+僕の周りに病んじゃう子が多いので、少しでもこのアプリで笑ってくれたり、元気になってくれればと思い作成しました。
 メンタルが落ち込んだ時に、使ってください。ブラウザを閉じない限り、永遠に褒めてくれます()。
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
