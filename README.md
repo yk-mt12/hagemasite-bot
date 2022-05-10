@@ -1,5 +1,4 @@
-# 疲れた心に励ましbotです。
-URL: https://hagemasite-bot.netlify.app/
+# [疲れた心に励ましbotです。](https://hagemasite-bot.netlify.app/)
 
 ## App description
 僕の周りにはナイーブな子達が多いので、少しでもこのアプリで笑ってくれたり、元気になってくれればと思い作成しました。
